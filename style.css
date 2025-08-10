@@ -1,0 +1,58 @@
+:root{
+    --dark-color: #1F2938;
+    --button-color: #3882f6;
+    --main-text-color: #F9FAF8;
+    --secondary-text-color: #E5E7EB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: var(--dark-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--main-text-color);
+    padding: 20px;
+}
+
+header > *{
+    max-width: 1000px;
+}
+
+.logo{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.navbar > li > a:hover{
+    color: var(--button-color);
+    transition: 200ms ease;
+}
