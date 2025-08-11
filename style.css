@@ -20,16 +20,29 @@ body{
 
 header{
     background-color: var(--dark-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--main-text-color);
+    color: var(--main-text-color);   
+    font-size: 38px;
+
     padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper{
+    width: 1300px;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
-    font-size: 48px;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 34px;
 }
 
 .navbar{
@@ -43,7 +56,7 @@ header{
 .navbar > li > a {
     text-decoration: none;
     color: var(--secondary-text-color);
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .navbar > li > a:hover{
@@ -51,4 +64,47 @@ header{
     transition: 200ms ease;
 }
 
+.hero-section{
+    width: 1300px;
+    max-width: 100%;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    padding: 200px 0;
+}
+
+.hero-section p {
+    font-size: 24px;
+}
+
+.sign-up-container{
+    font-size: 28px;
+}
+
+#sign-up-button{
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    font-size: 24px;
+    cursor: pointer;
+    transition: 200ms ease;
+
+    margin-top: 20px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+#sign-up-button:hover{
+    background-color: var(--main-text-color);
+    color: var(--button-color);
+}
+
+.image-placeholder{
+    background-color: #6d747d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
