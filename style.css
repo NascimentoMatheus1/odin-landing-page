@@ -15,22 +15,16 @@ html{
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    height: 100vh;
 }
 
 header{
     background-color: var(--dark-color);
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: var(--main-text-color);
     padding: 20px;
-}
-
-header > *{
-    max-width: 1000px;
 }
 
 .logo{
@@ -56,3 +50,5 @@ header > *{
     color: var(--button-color);
     transition: 200ms ease;
 }
+
+
